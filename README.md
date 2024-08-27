@@ -22,6 +22,14 @@ To install the required dependencies, run the following command:
 ```bash
 python3 -m pip install 'git+https://github.com/facebookresearch/segment-anything-2.git'
 ```
-
+Or follow these steps:
+```bash
+git clone https://github.com/facebookresearch/segment-anything-2.git
+cd segment-anything-2 & pip install -e .
+pip install -e ".[demo]"
+cd checkpoints && \
+./download_ckpts.sh && \
+cd ..
+```
 ## Acknowledgements
 This project is based on the official SAM2 repository by Facebook Research. Special thanks to the authors for their work on the original implementation
